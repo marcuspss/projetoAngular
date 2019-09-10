@@ -7,13 +7,13 @@
     </div>
     <!-- /.box-header --> 
     <div class="box-body">
-      <div *ngIf="!items().lenght">
+      <div *ngIf="!items().length">
         <p class="text-center">
           Seu carrinho está vazio!
         </p>
 
       </div>
-      <div *ngIf="items().lenght" class="table-responsive" >
+      <div *ngIf="items().length" class="table-responsive" >
           <table class="table">
             <tbody>
             <tr *ngFor="let item of items()">
@@ -32,10 +32,10 @@
           </tbody></table>
         </div>
     </div>
-    <div class="box-footer" *ngIf ="item().lenght">
+    <div class="box-footer" *ngIf ="items().length">
       <div class="pull-right">
         <button (click)="clear()" type="button" class="btn btn-danger"><i class="fa fa-trash"></i> Limpar</button>
-        <a href="order.html" class="btn btn-success"><i class="fa fa-credit-card"></i> Fechar Pedido</a>
+        <a [routerLink]="['/order']" class="btn btn-success"><i class="fa fa-credit-card"></i> Fechar Pedido</a>
       </div>
     </div>
 </div>
