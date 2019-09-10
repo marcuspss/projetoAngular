@@ -5,15 +5,15 @@
 
       <h3 class="box-title">Carrinho</h3>
     </div>
-    <!-- /.box-header -->
+    <!-- /.box-header --> 
     <div class="box-body">
-      <div *ngIf="!item().lenght">
+      <div *ngIf="!items().lenght">
         <p class="text-center">
           Seu carrinho está vazio!
         </p>
 
       </div>
-      <div *ngIf="item().lenght" class="table-responsive" >
+      <div *ngIf="items().lenght" class="table-responsive" >
           <table class="table">
             <tbody>
             <tr *ngFor="let item of items()">
