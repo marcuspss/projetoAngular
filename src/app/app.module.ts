@@ -2,11 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, LOCALE_ID } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
-<<<<<<< HEAD
-import {FormsModule} from '@angular/forms'
-=======
 import { FormsModule} from '@angular/forms'
->>>>>>> 4d6a7a3e3aa317534fed7d4789e912764c041259
 
 import {ROUTES} from './app.routes'
 
