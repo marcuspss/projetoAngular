@@ -22,7 +22,7 @@ import {ShoppingCartService} from './restaurant-detail/shopping-cart/shopping-ca
 import { OrderComponent } from './order/order.component';
 import { InputComponent } from './shared/input/input.component';
 import { RadioComponent } from './shared/radio/radio.component';
-import { OrderLessComponent } from './order/order-less/order-less.component';
+import { OrderItemsComponent } from './order/order-items/order-items.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,7 +39,7 @@ import { OrderLessComponent } from './order/order-less/order-less.component';
     OrderComponent,
     InputComponent,
     RadioComponent,
-    OrderLessComponent
+    OrderItemsComponent
   ],
   imports: [
     BrowserModule,
